@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.home.AppointmentsFragment">
+
+    <LinearLayout
+        android:id="@+id/appointmentsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:text="@string/appointments"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+        <!--
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/appointmentConfirmedBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/appointments_button"
+                        android:paddingBottom="0dp"
+                        android:textColor="@color/black"
+                        android:text="Confirmed"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/appointmentCancelledBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:background="@drawable/appointments_button"
+                        android:layout_marginStart="-5dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Cancelled"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+        -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/appointmentsTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            app:tabBackground="@drawable/edit_text_border">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/confirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmed" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/cancelled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelled" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <LinearLayout
+            android:id="@+id/appointmentFrame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1.75"
+            android:background="@drawable/edit_text_border"
+            android:orientation="vertical">
+            <!--<androidx.viewpager.widget.ViewPager
+                android:id="@+id/appointmentsViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>-->
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

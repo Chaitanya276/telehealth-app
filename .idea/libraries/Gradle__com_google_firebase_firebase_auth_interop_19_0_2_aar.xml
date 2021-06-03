@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-auth-interop:19.0.2@aar">
+    <CLASSES>
+      <root url="file://C:/Gradle/gradle-6.8.2/bin/caches/transforms-3/44fb67b5eb6a9b41c5d42b0535e17590/transformed/jetified-firebase-auth-interop-19.0.2/res" />
+      <root url="file://C:/Gradle/gradle-6.8.2/bin/caches/transforms-3/3667c782aa383841b9dcef20df81df5b/transformed/jetified-firebase-auth-interop-19.0.2/AndroidManifest.xml" />
+      <root url="jar://C:/Gradle/gradle-6.8.2/bin/caches/transforms-3/3667c782aa383841b9dcef20df81df5b/transformed/jetified-firebase-auth-interop-19.0.2/jars/classes.jar!/" />
+      <root url="file://C:/Gradle/gradle-6.8.2/bin/caches/transforms-3/3667c782aa383841b9dcef20df81df5b/transformed/jetified-firebase-auth-interop-19.0.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://C:/Gradle/gradle-6.8.2/bin/caches/modules-2/files-2.1/com.google.firebase/firebase-auth-interop/19.0.2/493072813a77bfdcdfed4cb38dab0e56f9a03303/firebase-auth-interop-19.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

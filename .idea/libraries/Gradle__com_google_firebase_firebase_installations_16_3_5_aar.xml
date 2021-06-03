@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-installations:16.3.5@aar">
+    <CLASSES>
+      <root url="file://C:/Gradle/gradle-6.8.2/bin/caches/transforms-3/be5d0d5efd71fe147d5360fca5bbe4a1/transformed/jetified-firebase-installations-16.3.5/res" />
+      <root url="file://C:/Gradle/gradle-6.8.2/bin/caches/transforms-3/a435cadfe629585f062672b7679ce70d/transformed/jetified-firebase-installations-16.3.5/AndroidManifest.xml" />
+      <root url="jar://C:/Gradle/gradle-6.8.2/bin/caches/transforms-3/a435cadfe629585f062672b7679ce70d/transformed/jetified-firebase-installations-16.3.5/jars/classes.jar!/" />
+      <root url="file://C:/Gradle/gradle-6.8.2/bin/caches/transforms-3/a435cadfe629585f062672b7679ce70d/transformed/jetified-firebase-installations-16.3.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://C:/Gradle/gradle-6.8.2/bin/caches/modules-2/files-2.1/com.google.firebase/firebase-installations/16.3.5/ba864fdfc85df3cb215b477c4a82732e6c4aad2/firebase-installations-16.3.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

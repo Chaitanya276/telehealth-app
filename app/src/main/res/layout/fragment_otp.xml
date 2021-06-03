@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OtpFragment"
+    android:padding="30dp">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/otpLayoutName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/otp_verification"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="@dimen/layout_name" />
+            <TextView
+                android:id="@+id/tvOtpSent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/otp_sent"
+                android:layout_below="@id/otpLayoutName"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:id="@+id/otpLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvOtpSent"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <EditText
+                    android:id="@+id/etOTP1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:background="@drawable/edit_text_border"
+                    android:textSize="25sp"
+                    android:importantForAutofill="no" />
+
+                <EditText
+                    android:id="@+id/etOTP2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:background="@drawable/edit_text_border"
+                    android:textSize="25sp"
+                    android:importantForAutofill="no" />
+                <EditText
+                    android:id="@+id/etOTP3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:background="@drawable/edit_text_border"
+                    android:textSize="25sp"
+                    android:importantForAutofill="no" />
+                <EditText
+                    android:id="@+id/etOTP4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:background="@drawable/edit_text_border"
+                    android:textSize="25sp"
+                    android:importantForAutofill="no" />
+                <EditText
+                    android:id="@+id/etOTP5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:background="@drawable/edit_text_border"
+                    android:textSize="25sp"
+                    android:importantForAutofill="no" />
+                <EditText
+                    android:id="@+id/etOTP6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:background="@drawable/edit_text_border"
+                    android:textSize="25sp"
+                    android:importantForAutofill="no" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnVerifyOtp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@color/white"
+                android:layout_marginTop="100dp"
+                android:layout_below="@id/otpLinearLayout"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                android:text="@string/verify"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+
+
+<!--    </ScrollView>-->
+
+
+
+</FrameLayout>

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.home.ProfileFragment">
+
+    <ProgressBar
+        android:id="@+id/profileProgressLoader"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/homeProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="@string/profile"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ScrollView
+            android:id="@+id/profileScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeProfile"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:verticalScrollbarPosition="right">
+
+
+            <LinearLayout
+                android:id="@+id/signUpLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/first_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/form_text" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/profileTextFieldFirstname"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="@dimen/edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etProfileName"
+                            android:layout_width="@dimen/edit_text"
+                            android:layout_height="wrap_content"
+                            android:importantForAutofill="no"
+                            android:inputType="textFilter|text"
+                            android:paddingStart="0dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="0dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/last_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/form_text" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/profileTextFieldlastname"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="@dimen/edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etProfileLastname"
+                            android:layout_width="@dimen/edit_text"
+                            android:layout_height="wrap_content"
+                            android:importantForAutofill="no"
+                            android:inputType="textFilter|text"
+                            android:paddingStart="0dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="0dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/email"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/form_text" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/profileTextFieldEmail"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="@dimen/edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="0dp"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etProfileEmail"
+                            android:layout_width="@dimen/edit_text"
+                            android:layout_height="wrap_content"
+                            android:importantForAutofill="no"
+                            android:inputType="textEmailAddress"
+                            android:paddingStart="0dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="0dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/date_of_birth"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/form_text" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/profileTextFielddob"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="@dimen/edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="0dp"
+                        app:errorEnabled="true"
+                        app:hintAnimationEnabled="false"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etProfiledob"
+                            android:layout_width="@dimen/edit_text"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/dd_mm_yyy"
+                            android:importantForAutofill="no"
+                            android:inputType="textEmailAddress"
+                            android:paddingStart="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="0dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/gender"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/form_text" />
+
+
+                    <!--  <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="30dp"
+                          android:layout_alignParentEnd="true"
+                          android:layout_centerVertical="true"
+                          android:orientation="horizontal">-->
+
+                    <RadioGroup
+                        android:id="@+id/genderGroup"
+                        android:layout_width="170dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/profileMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:text="@string/male" />
+
+                        <RadioButton
+                            android:id="@+id/profileFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="10dp"
+                            android:text="@string/female" />
+                    </RadioGroup>
+
+                    <!--                    </LinearLayout>-->
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/contact_no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/form_text" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+                        <!--  <com.google.android.material.textfield.TextInputLayout
+                              android:id="@+id/profileTextFieldPhoneCode"
+                              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                              android:layout_width="55dp"
+                              android:layout_height="20dp"
+                              android:layout_marginEnd="5dp"
+                              android:layout_centerVertical="true"
+                              app:errorEnabled="true">-->
+
+                        <AutoCompleteTextView
+                            android:id="@+id/etprofilePhoneCode"
+                            android:layout_width="55dp"
+                            android:layout_height="27dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/edit_text_border"
+                            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                            android:hint="@string/_00"
+                            android:maxLength="4"
+                            android:inputType="number"
+                            android:paddingStart="0dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="0dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/profileTextFieldPhone"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            app:errorEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etProfilePhone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:importantForAutofill="no"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:paddingStart="0dp"
+                                android:paddingTop="2dp"
+                                android:paddingEnd="0dp"
+                                android:paddingBottom="2dp"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/form_text" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/profileTextFieldAddress"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="@dimen/edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etProfileAdress"
+                            android:layout_width="@dimen/edit_text"
+                            android:layout_height="wrap_content"
+                            android:importantForAutofill="no"
+                            android:inputType="textFilter|text"
+                            android:paddingStart="0dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="0dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/city_town"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/form_text" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/profileTextFieldCity"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="@dimen/edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etProfileCity"
+                            android:layout_width="@dimen/edit_text"
+                            android:layout_height="wrap_content"
+                            android:importantForAutofill="no"
+                            android:inputType="textFilter|text"
+                            android:paddingStart="0dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="0dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/state"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/form_text" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/profileTextFieldState"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="@dimen/edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etProfileState"
+                            android:layout_width="@dimen/edit_text"
+                            android:layout_height="wrap_content"
+                            android:importantForAutofill="no"
+                            android:inputType="textFilter|text"
+                            android:paddingStart="0dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="0dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/country"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/form_text" />
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/etProfileCountry"
+                        android:layout_width="@dimen/edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/edit_text_border"
+                        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                        android:importantForAutofill="no"
+                        android:inputType="textFilter|text"
+                        android:paddingStart="0dp"
+                        android:paddingTop="2dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/postalcode"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/form_text" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/profileTextFieldPostalcode"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="@dimen/edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etProfilePostalcode"
+                            android:layout_width="@dimen/edit_text"
+                            android:layout_height="wrap_content"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:paddingStart="0dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="0dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileScrollView"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/profileBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/back"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/profileUpdateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

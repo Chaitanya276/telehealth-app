@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "219265701311",
+    "project_id": "telehealth-dc573",
+    "storage_bucket": "telehealth-dc573.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219265701311:android:84e517db2cedb87f543d0a",
+        "android_client_info": {
+          "package_name": "com.app.telehealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219265701311-4c70tutnebv7b7lpj4u14p8eane8s58t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.telehealth",
+            "certificate_hash": "86e112c2dff397adfcb0225f267cd1e0ce3fc73d"
+          }
+        },
+        {
+          "client_id": "219265701311-5ni7etjpoqv3lecg6liqlv86q4q4jun6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCULJ04qipkAUbKmEWryozBoHXwG-GQcFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219265701311-5ni7etjpoqv3lecg6liqlv86q4q4jun6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
